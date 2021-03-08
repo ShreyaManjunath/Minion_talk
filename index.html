@@ -4,40 +4,78 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Banana Speak</title>
+        <title>Minion Speak</title>
         
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
             textarea {
-                width:90%;
+                width:95%;
                 display:block;
                 margin:1 rem;
-                height:10vh;
-                padding:1 rem
+                height:20vh;
+                padding:1 rem;
+                padding-left:1rem;
+                background:#eee;
+                font-size:18px;
+
                 
+            }
+            body{
+                background:#C1C8E4;
             }
 
             #output {
                 border:1px solid black;
-                height:10vh;
-                width:80%;
+                height:20vh;
+                width:95%;
                 margin:1 rem;
-                padding:1rem
+                padding:1rem;
+                background:#eee;
+                {% comment %} padding:40px; {% endcomment %}
             }
+
+            #nav{
+                {% comment %} background:#3B8BEB; {% endcomment %}
+                margin:0;
+                padding:0;
+                text-align:center;
+                font-size:2rem;
+                color:white;
+            }
+
+            #btn-translate{
+                width:30%;
+                height:3rem;
+                align:center;
+                background:#8860D0;
+                margin-left:10px;
+                display:block;
+                color:white;
+                font-size:1rem;
+                
+                
+                
+            }
+            
+            
+
         </style>
     </head>
     <body>
-       <h1>Banana</h1>
-       <textarea id="txt-input" placeholder="enter the text you want to translate to banana language"></textarea>
-        <button style="margin:1rem" id="btn-translate">Translate</button>
+    <nav id="nav">
+       <h1>Minion speak</h1>
+       </nav>
+       <textarea id="txt-input" placeholder="Enter the text you want to translate to Minion language..."></textarea>
+        <button style="margin:1rem" id="btn-translate">Translate to Minion</button>
 
-        <div style="font-size:larger">Output will come here  </div>
+        <div style="font-size:larger"><strong>Translated text</strong></div>
 
         <div id="output"></div>
-
+        
        <script src="script.js" type="text/javascript">
         </script>
+        
     </body>
 </html>
